@@ -1,0 +1,57 @@
+.bold {
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration: underline;
+}
+.visualisation, .editor.code textarea.code {
+    width: 800px;
+    height: 200px;
+    border: 1px solid black;
+    overflow: scroll;
+    opacity: 1;
+}
+
+.visualisation {
+    height: 204px;
+    width: 804px
+}
+
+textarea.code, .editor.code .visualisation {
+    height: 0px;
+    opacity: 0;
+    border-width: 0px;
+}
+
+.editor button {
+    width: 80px;
+}
+
+.editor.code li:first-child button:last-child, .editor li:first-child button:first-child {
+    width: 0px;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+.editor.code li:first-child button:first-child {
+    width: 80px;
+    opacity: 1;
+    margin: initial;
+    padding: 1px 6px;
+    border-width: 2px;
+}
+
+
+.toolbar ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.toolbar li {
+    display: inline-block;
+}
